@@ -1,0 +1,29 @@
+{
+  "name": "weather_app",
+  "version": "1.0.0",
+  "description": "A simple backend server to hide OpenWeather API Key",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Suyash-Borkar/Weather_App.git"
+  },
+  "keywords": [
+    "weather",
+    "API",
+    "Node.js"
+  ],
+  "author": "Suyash Borkar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Suyash-Borkar/Weather_App/issues"
+  },
+  "homepage": "https://github.com/Suyash-Borkar/Weather_App#readme",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "node-fetch": "^3.3.2"
+  }
+}
