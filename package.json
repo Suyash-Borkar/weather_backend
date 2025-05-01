@@ -1,14 +1,15 @@
 {
-  "name": "weather_app",
+  "name": "weather_backend",
   "version": "1.0.0",
-  "description": "A simple backend server to hide OpenWeather API Key",
+  "description": "A Backend Server For Weather App",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Suyash-Borkar/Weather_App.git"
+    "url": "git+https://github.com/Suyash-Borkar/weather_backend.git"
   },
   "keywords": [
     "weather",
@@ -18,12 +19,11 @@
   "author": "Suyash Borkar",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Suyash-Borkar/Weather_App/issues"
+    "url": "https://github.com/Suyash-Borkar/weather_backend/issues"
   },
-  "homepage": "https://github.com/Suyash-Borkar/Weather_App#readme",
+  "homepage": "https://github.com/Suyash-Borkar/weather_backend#readme",
   "dependencies": {
     "dotenv": "^16.5.0",
-    "express": "^5.1.0",
-    "node-fetch": "^3.3.2"
+    "express": "^5.1.0"
   }
 }
