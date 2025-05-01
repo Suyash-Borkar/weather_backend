@@ -2,6 +2,18 @@ import express from 'express';
 import fetch from 'node-fetch';
 import dotenv from 'dotenv';
 
+import express from 'express'; // if using ES modules
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const app = express();
+
+app.use(express.static(path.join(__dirname, 'public')));
+
+
 dotenv.config();
 
 const app = express();
