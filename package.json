@@ -10,7 +10,6 @@
   },
   "repository": {
     "type": "git",
-
     "url": "git+https://github.com/Suyash-Borkar/weather_backend.git"
   },
   "keywords": [
@@ -27,6 +26,8 @@
   "dependencies": {
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
+    "helmet": "^8.1.0",
+    "morgan": "^1.10.0",
     "node-fetch": "^3.3.2"
   }
 }
