@@ -5,6 +5,7 @@ import { fileURLToPath } from 'url';
 import helmet from 'helmet';
 import morgan from 'morgan';
 import dotenv from 'dotenv';  // Import dotenv to load environment variables
+import fetch from 'node-fetch';  // Import fetch if using Node.js version < 17.5
 
 dotenv.config();  // Load environment variables from .env file
 
@@ -34,6 +35,8 @@ app.get('/weather', async (req, res) => {
     // Use the environment variable for API key
     const apiKey = process.env.OPENWEATHER_API_KEY;
     const weatherApiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+
+    console.log('Weather API URL:', weatherApiUrl); // Log the URL for debugging
 
     const response = await fetch(weatherApiUrl);
     
